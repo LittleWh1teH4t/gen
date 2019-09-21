@@ -5,7 +5,7 @@ def fib():
     a, b =b, a+b
     
 for f in fib()
-  if i > 13:
+  if i > 100:
     break
 
   print(f)
