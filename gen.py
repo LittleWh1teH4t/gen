@@ -1,11 +1,11 @@
-def fib():
-  a, b =0, 1
-  while true:
-    yeild a
-    a, b =b, a+b
+def square_numbers(nums):
+  for i in nums:
+    yield (i*i)
     
-for f in fib()
-  if i > 100:
-    break
+my_nums = square_numbers([1,2,3,4,5])
+# my_nums = [x*x for x in [1,2,3,4,5]]
 
-  print(f)
+# print my_nums # [1, 4, 9, 16, 25]
+
+for num in my_nums: 
+  print num
