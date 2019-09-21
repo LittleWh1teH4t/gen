@@ -6,7 +6,7 @@ from random import choice,randint
 
 if not isfile('words.txt')
     print 'Downloading words.txt...'
-    url=''
+    url='https://raw.githubusercontent.com/dwyl/english-words/master/words.txt'
     with open('words.txt', 'w') as f:
         f.write(urlopen(url).read())
         
